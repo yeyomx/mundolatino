@@ -1,30 +1,47 @@
+<!DOCTYPE HTML>
 <html>
-<head>
-<script src="http://jwpsrv.com/library/cpajHG5SEeOpQCIACI0I_Q.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>JWPlayer</title>
-<style type="text/css">
-.sdfa {
-    font-family:Platino Linotype, Book Antqua, Palatino, serif;
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+          <meta name="author" content="canal2">
+<meta name="description" content="señal en vivo canal 2 - Cali, Valle del Cauca, Colombia - Video Steaming">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+  <script type="text/javascript" charset="utf-8" src="https://virtualtronics.com/streaming/video/canal2/js/virtualtronics.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="https://virtualtronics.com/streaming/video/canal2/js/virtualtronics-sel.min.js"></script>
+  <title>Señal en Vivo  - Canal2</title>
+  <script type="text/javascript" charset="utf-8">
+  window.onload = function() {
+  var player = new Clappr.Player({
+    source: 'https://spt-novelas-1-us.samsung.wurl.tv/2000.m3u8',
+    parentId: '#virtualtronics',
+    plugins: {
+      core: [LevelSelector],
+    },
+    width: '100%', height: 600,
+    hideMediaControl: false,
+    autoPlay: true,
+    hlsjsConfig: {
+        "maxBufferLength": 30,
+        "maxMaxBufferLength": 600,
+        "maxBufferSize": 60000000,
+        "maxBufferHole": 0.3
+    },    
+  });
 }
+  </script>
+<style type="text/css">
+<!--
 body {
 	background-color: #000000;
 }
-</style>
-
-</head>
+-->
+</style></head>
 <body>
-<div id='playerMwtVIBMcCRaj'></div>
-<script type='text/javascript'>
-    jwplayer('playerMwtVIBMcCRaj').setup({
-        file: 'https://spt-novelas-1-us.samsung.wurl.tv/2000.m3u8',
-        image: '',
-        title: 'SONY NOVELAS',
-        width: '100%',
-        height: '100%',
-        fallback: 'false',
-        primary: 'flash'
-});
-</script>
+  <div align="center">
+    <div id="virtualtronics">
+  </div>
+  </div>
 </body>
-</html
+</html>
